@@ -7,21 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C6F5661A65A2797C0B09AF2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E3C2BB92257126CA350FC8 /* libPods.a */; };
 		D3D326E11A70CE3800A8EC7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3D326E01A70CE3800A8EC7D /* Foundation.framework */; };
 		D3D326E31A70CE3800A8EC7D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3D326E21A70CE3800A8EC7D /* CoreGraphics.framework */; };
 		D3D326E51A70CE3800A8EC7D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3D326E41A70CE3800A8EC7D /* UIKit.framework */; };
 		D3D326EB1A70CE3800A8EC7D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3D326E91A70CE3800A8EC7D /* InfoPlist.strings */; };
 		D3D326ED1A70CE3800A8EC7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D326EC1A70CE3800A8EC7D /* main.m */; };
 		D3D326F11A70CE3800A8EC7D /* MKDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D326F01A70CE3800A8EC7D /* MKDAppDelegate.m */; };
-		D3D326F41A70CE3800A8EC7D /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D326F21A70CE3800A8EC7D /* Main_iPhone.storyboard */; };
 		D3D326F71A70CE3800A8EC7D /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D326F51A70CE3800A8EC7D /* Main_iPad.storyboard */; };
-		D3D326FA1A70CE3800A8EC7D /* MKDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D326F91A70CE3800A8EC7D /* MKDViewController.m */; };
 		D3D326FC1A70CE3800A8EC7D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3D326FB1A70CE3800A8EC7D /* Images.xcassets */; };
 		D3D327031A70CE3800A8EC7D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3D327021A70CE3800A8EC7D /* XCTest.framework */; };
 		D3D327041A70CE3800A8EC7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3D326E01A70CE3800A8EC7D /* Foundation.framework */; };
 		D3D327051A70CE3800A8EC7D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3D326E41A70CE3800A8EC7D /* UIKit.framework */; };
 		D3D3270D1A70CE3800A8EC7D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3D3270B1A70CE3800A8EC7D /* InfoPlist.strings */; };
 		D3D3270F1A70CE3800A8EC7D /* MkdMovieListAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D3270E1A70CE3800A8EC7D /* MkdMovieListAppTests.m */; };
+		D3D3271B1A70DDE900A8EC7D /* MKDMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D327191A70DDE900A8EC7D /* MKDMovieViewController.m */; };
+		D3D3271C1A70DDE900A8EC7D /* MKDMovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3D3271A1A70DDE900A8EC7D /* MKDMovieViewController.xib */; };
+		D3D912CE1A73516B002B0B62 /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D912CC1A73516B002B0B62 /* MovieCell.m */; };
+		D3D912CF1A73516B002B0B62 /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3D912CD1A73516B002B0B62 /* MovieCell.xib */; };
+		D3D912D31A735D3B002B0B62 /* MovieDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D912D11A735D3B002B0B62 /* MovieDetailsViewController.m */; };
+		D3D912D41A735D3B002B0B62 /* MovieDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3D912D21A735D3B002B0B62 /* MovieDetailsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24E3C2BB92257126CA350FC8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		324D5E9397865950CBD95445 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		6D0CB844BE27CC462BCFF31B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D3D326DD1A70CE3800A8EC7D /* MkdMovieListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MkdMovieListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3D326E01A70CE3800A8EC7D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D3D326E21A70CE3800A8EC7D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,16 +53,22 @@
 		D3D326EE1A70CE3800A8EC7D /* MkdMovieListApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MkdMovieListApp-Prefix.pch"; sourceTree = "<group>"; };
 		D3D326EF1A70CE3800A8EC7D /* MKDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKDAppDelegate.h; sourceTree = "<group>"; };
 		D3D326F01A70CE3800A8EC7D /* MKDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKDAppDelegate.m; sourceTree = "<group>"; };
-		D3D326F31A70CE3800A8EC7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		D3D326F61A70CE3800A8EC7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		D3D326F81A70CE3800A8EC7D /* MKDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKDViewController.h; sourceTree = "<group>"; };
-		D3D326F91A70CE3800A8EC7D /* MKDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKDViewController.m; sourceTree = "<group>"; };
 		D3D326FB1A70CE3800A8EC7D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D3D327011A70CE3800A8EC7D /* MkdMovieListAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MkdMovieListAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3D327021A70CE3800A8EC7D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D3D3270A1A70CE3800A8EC7D /* MkdMovieListAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MkdMovieListAppTests-Info.plist"; sourceTree = "<group>"; };
 		D3D3270C1A70CE3800A8EC7D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D3D3270E1A70CE3800A8EC7D /* MkdMovieListAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MkdMovieListAppTests.m; sourceTree = "<group>"; };
+		D3D327181A70DDE900A8EC7D /* MKDMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKDMovieViewController.h; sourceTree = "<group>"; };
+		D3D327191A70DDE900A8EC7D /* MKDMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKDMovieViewController.m; sourceTree = "<group>"; };
+		D3D3271A1A70DDE900A8EC7D /* MKDMovieViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MKDMovieViewController.xib; sourceTree = "<group>"; };
+		D3D912CB1A73516B002B0B62 /* MovieCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieCell.h; sourceTree = "<group>"; };
+		D3D912CC1A73516B002B0B62 /* MovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
+		D3D912CD1A73516B002B0B62 /* MovieCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
+		D3D912D01A735D3B002B0B62 /* MovieDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieDetailsViewController.h; sourceTree = "<group>"; };
+		D3D912D11A735D3B002B0B62 /* MovieDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieDetailsViewController.m; sourceTree = "<group>"; };
+		D3D912D21A735D3B002B0B62 /* MovieDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieDetailsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +79,7 @@
 				D3D326E31A70CE3800A8EC7D /* CoreGraphics.framework in Frameworks */,
 				D3D326E51A70CE3800A8EC7D /* UIKit.framework in Frameworks */,
 				D3D326E11A70CE3800A8EC7D /* Foundation.framework in Frameworks */,
+				6C6F5661A65A2797C0B09AF2 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,13 +96,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		408FB26D6BDF878717902559 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D0CB844BE27CC462BCFF31B /* Pods.debug.xcconfig */,
+				324D5E9397865950CBD95445 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D3D326D41A70CE3800A8EC7D = {
 			isa = PBXGroup;
 			children = (
+				D3D912D01A735D3B002B0B62 /* MovieDetailsViewController.h */,
+				D3D912D11A735D3B002B0B62 /* MovieDetailsViewController.m */,
+				D3D912D21A735D3B002B0B62 /* MovieDetailsViewController.xib */,
+				D3D912CB1A73516B002B0B62 /* MovieCell.h */,
+				D3D912CC1A73516B002B0B62 /* MovieCell.m */,
+				D3D912CD1A73516B002B0B62 /* MovieCell.xib */,
+				D3D327181A70DDE900A8EC7D /* MKDMovieViewController.h */,
+				D3D327191A70DDE900A8EC7D /* MKDMovieViewController.m */,
+				D3D3271A1A70DDE900A8EC7D /* MKDMovieViewController.xib */,
 				D3D326E61A70CE3800A8EC7D /* MkdMovieListApp */,
 				D3D327081A70CE3800A8EC7D /* MkdMovieListAppTests */,
 				D3D326DF1A70CE3800A8EC7D /* Frameworks */,
 				D3D326DE1A70CE3800A8EC7D /* Products */,
+				408FB26D6BDF878717902559 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +141,7 @@
 				D3D326E21A70CE3800A8EC7D /* CoreGraphics.framework */,
 				D3D326E41A70CE3800A8EC7D /* UIKit.framework */,
 				D3D327021A70CE3800A8EC7D /* XCTest.framework */,
+				24E3C2BB92257126CA350FC8 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,10 +151,7 @@
 			children = (
 				D3D326EF1A70CE3800A8EC7D /* MKDAppDelegate.h */,
 				D3D326F01A70CE3800A8EC7D /* MKDAppDelegate.m */,
-				D3D326F21A70CE3800A8EC7D /* Main_iPhone.storyboard */,
 				D3D326F51A70CE3800A8EC7D /* Main_iPad.storyboard */,
-				D3D326F81A70CE3800A8EC7D /* MKDViewController.h */,
-				D3D326F91A70CE3800A8EC7D /* MKDViewController.m */,
 				D3D326FB1A70CE3800A8EC7D /* Images.xcassets */,
 				D3D326E71A70CE3800A8EC7D /* Supporting Files */,
 			);
@@ -162,9 +194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3D327121A70CE3800A8EC7D /* Build configuration list for PBXNativeTarget "MkdMovieListApp" */;
 			buildPhases = (
+				C177D0C45AB58354A19E9137 /* Check Pods Manifest.lock */,
 				D3D326D91A70CE3800A8EC7D /* Sources */,
 				D3D326DA1A70CE3800A8EC7D /* Frameworks */,
 				D3D326DB1A70CE3800A8EC7D /* Resources */,
+				413C7139FAB5ED8074B7233F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,8 +268,10 @@
 			files = (
 				D3D326F71A70CE3800A8EC7D /* Main_iPad.storyboard in Resources */,
 				D3D326FC1A70CE3800A8EC7D /* Images.xcassets in Resources */,
-				D3D326F41A70CE3800A8EC7D /* Main_iPhone.storyboard in Resources */,
+				D3D3271C1A70DDE900A8EC7D /* MKDMovieViewController.xib in Resources */,
 				D3D326EB1A70CE3800A8EC7D /* InfoPlist.strings in Resources */,
+				D3D912D41A735D3B002B0B62 /* MovieDetailsViewController.xib in Resources */,
+				D3D912CF1A73516B002B0B62 /* MovieCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,13 +285,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		413C7139FAB5ED8074B7233F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C177D0C45AB58354A19E9137 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D3D326D91A70CE3800A8EC7D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3D326FA1A70CE3800A8EC7D /* MKDViewController.m in Sources */,
+				D3D912D31A735D3B002B0B62 /* MovieDetailsViewController.m in Sources */,
+				D3D3271B1A70DDE900A8EC7D /* MKDMovieViewController.m in Sources */,
 				D3D326ED1A70CE3800A8EC7D /* main.m in Sources */,
+				D3D912CE1A73516B002B0B62 /* MovieCell.m in Sources */,
 				D3D326F11A70CE3800A8EC7D /* MKDAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,14 +356,6 @@
 				D3D326EA1A70CE3800A8EC7D /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		D3D326F21A70CE3800A8EC7D /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D3D326F31A70CE3800A8EC7D /* Base */,
-			);
-			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 		D3D326F51A70CE3800A8EC7D /* Main_iPad.storyboard */ = {
@@ -388,6 +451,7 @@
 		};
 		D3D327131A70CE3800A8EC7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D0CB844BE27CC462BCFF31B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -401,6 +465,7 @@
 		};
 		D3D327141A70CE3800A8EC7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 324D5E9397865950CBD95445 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -471,6 +536,7 @@
 				D3D327141A70CE3800A8EC7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3D327151A70CE3800A8EC7D /* Build configuration list for PBXNativeTarget "MkdMovieListAppTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +545,7 @@
 				D3D327171A70CE3800A8EC7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
