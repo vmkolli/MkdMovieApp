@@ -8,6 +8,7 @@
 
 #import "MKDAppDelegate.h"
 #import "MKDMovieViewController.h"
+#import "DvdViewController.h"
 
 @implementation MKDAppDelegate
 
@@ -15,9 +16,29 @@
 {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    MKDMovieViewController *vc = [[MKDMovieViewController alloc] init];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
-    self.window.rootViewController = nav;
+    MKDMovieViewController *mvc = [[MKDMovieViewController alloc] init];
+    DvdViewController *dvc = [[DvdViewController alloc] init];
+    UITabBarController *tbc = [[UITabBarController alloc]init];
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:mvc];
+    tbc.viewControllers = [NSArray arrayWithObjects:nav, dvc, nil];
+    UITabBar *tabBars = tbc.tabBar;
+    UITabBarItem *tabBarItems[2];
+    NSArray *titles = @[@"Movies", @"DVDs"];
+    for (int i = 0; i < tabBars.items.count ; i++ ) {
+        tabBarItems[i]   = [tabBars.items objectAtIndex:i];
+        tabBarItems[i].title = titles[i];
+        tabBarItems[i].titlePositionAdjustment = UIOffsetMake(10, -20);
+    }
+    //UITabBarItem *mvTabBarItem = [tabBars.items objectAtIndex:0];
+    //UITabBarItem *dvdTabBarItem = [tabBars.items objectAtIndex:1];
+    //mvTabBarItem.title = @"Movies";
+    //dvdTabBarItem.title = @"DVDs";
+    
+    
+    
+    
+    self.window.rootViewController = tbc;
     
     [self.window makeKeyAndVisible];
     return YES;

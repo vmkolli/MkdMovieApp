@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6C6F5661A65A2797C0B09AF2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E3C2BB92257126CA350FC8 /* libPods.a */; };
+		D361C4481A74630E0083934A /* DvdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D361C4461A74630E0083934A /* DvdViewController.m */; };
+		D361C4491A74630E0083934A /* DvdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D361C4471A74630E0083934A /* DvdViewController.xib */; };
 		D3D326E11A70CE3800A8EC7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3D326E01A70CE3800A8EC7D /* Foundation.framework */; };
 		D3D326E31A70CE3800A8EC7D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3D326E21A70CE3800A8EC7D /* CoreGraphics.framework */; };
 		D3D326E51A70CE3800A8EC7D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3D326E41A70CE3800A8EC7D /* UIKit.framework */; };
@@ -43,6 +45,9 @@
 		24E3C2BB92257126CA350FC8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		324D5E9397865950CBD95445 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6D0CB844BE27CC462BCFF31B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D361C4451A74630E0083934A /* DvdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DvdViewController.h; sourceTree = "<group>"; };
+		D361C4461A74630E0083934A /* DvdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DvdViewController.m; sourceTree = "<group>"; };
+		D361C4471A74630E0083934A /* DvdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DvdViewController.xib; sourceTree = "<group>"; };
 		D3D326DD1A70CE3800A8EC7D /* MkdMovieListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MkdMovieListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3D326E01A70CE3800A8EC7D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D3D326E21A70CE3800A8EC7D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -108,6 +113,9 @@
 		D3D326D41A70CE3800A8EC7D = {
 			isa = PBXGroup;
 			children = (
+				D361C4451A74630E0083934A /* DvdViewController.h */,
+				D361C4461A74630E0083934A /* DvdViewController.m */,
+				D361C4471A74630E0083934A /* DvdViewController.xib */,
 				D3D912D01A735D3B002B0B62 /* MovieDetailsViewController.h */,
 				D3D912D11A735D3B002B0B62 /* MovieDetailsViewController.m */,
 				D3D912D21A735D3B002B0B62 /* MovieDetailsViewController.xib */,
@@ -272,6 +280,7 @@
 				D3D326EB1A70CE3800A8EC7D /* InfoPlist.strings in Resources */,
 				D3D912D41A735D3B002B0B62 /* MovieDetailsViewController.xib in Resources */,
 				D3D912CF1A73516B002B0B62 /* MovieCell.xib in Resources */,
+				D361C4491A74630E0083934A /* DvdViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +335,7 @@
 				D3D912D31A735D3B002B0B62 /* MovieDetailsViewController.m in Sources */,
 				D3D3271B1A70DDE900A8EC7D /* MKDMovieViewController.m in Sources */,
 				D3D326ED1A70CE3800A8EC7D /* main.m in Sources */,
+				D361C4481A74630E0083934A /* DvdViewController.m in Sources */,
 				D3D912CE1A73516B002B0B62 /* MovieCell.m in Sources */,
 				D3D326F11A70CE3800A8EC7D /* MKDAppDelegate.m in Sources */,
 			);

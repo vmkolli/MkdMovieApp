@@ -1,36 +1,32 @@
 //
-//  MKDMovieViewController.m
+//  DvdViewController.m
 //  MkdMovieListApp
 //
-//  Created by Vinayakumar Kolli on 1/21/15.
+//  Created by Vinayakumar Kolli on 1/24/15.
 //  Copyright (c) 2015 Vinayakumar Kolli. All rights reserved.
 //
 
-#import "MKDMovieViewController.h"
+#import "DvdViewController.h"
 #import "MovieCell.h"
 #import "UIImageView+AFNetworking.h"
 #import "MovieDetailsViewController.h"
 
-@interface MKDMovieViewController () <UITableViewDataSource,UITableViewDelegate, UITabBarDelegate>
-@property (weak, nonatomic) IBOutlet UITableView *MovieTableView;
+
+@interface DvdViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) NSArray *movies;
+@property (weak, nonatomic) IBOutlet UITableView *dvdTableView;
 
 - (void)makeRequest: (Boolean)isPartial;
 @end
 
-@implementation MKDMovieViewController
+@implementation DvdViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        
         // Custom initialization
-        /*UIScrollView *scroll = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0,self.view.frame.size.width, self.view.frame.size.height)];
-        
-        scroll.delegate = self;*/
-        self.title = @"Movies";
-        
+        self.title = @"DVDs";
     }
     return self;
 }
@@ -50,37 +46,24 @@
     return cell;
 }
 
-
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
- 
     [self makeRequest:NO];
+    self.dvdTableView.dataSource = self;
+    self.dvdTableView.delegate = self;
+    self.dvdTableView.rowHeight = 128;
     
-    self.MovieTableView.dataSource = self;
-    self.MovieTableView.delegate = self;
-    self.MovieTableView.rowHeight = 128;
-    
-    [self.MovieTableView registerNib:[UINib nibWithNibName:@"MovieCell" bundle:nil] forCellReuseIdentifier:@"MovieCell"];
+    [self.dvdTableView registerNib:[UINib nibWithNibName:@"MovieCell" bundle:nil] forCellReuseIdentifier:@"MovieCell"];
     UIRefreshControl *refreshControl = [[UIRefreshControl alloc]init];
-    [self.MovieTableView addSubview:refreshControl];
+    [self.dvdTableView addSubview:refreshControl];
     [refreshControl addTarget:self action:@selector(refreshTable:) forControlEvents:UIControlEventValueChanged];
     UITableViewController *tableViewController = [[UITableViewController alloc] init];
-    tableViewController.tableView = self.MovieTableView;
+    tableViewController.tableView = self.dvdTableView;
     [tableViewController setRefreshControl:refreshControl];
 
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    MovieDetailsViewController *mdvc = [[MovieDetailsViewController alloc] init];
-
-    mdvc.movieData = self.movies[indexPath.row];
-    
-    [self.navigationController pushViewController:mdvc animated:YES];
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)refreshTable :(UIRefreshControl *) refreshControl {
@@ -90,20 +73,27 @@
 
 - (void) makeRequest : (Boolean)isPartial {
     NSLog(@"Making call for partial %d", isPartial);
-    NSURL *url = [NSURL URLWithString:@"http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?apikey=kjh6zyazfeaxvmjt5kq7d64j"];
+    NSURL *url = [NSURL URLWithString:@"http://api.rottentomatoes.com/api/public/v1.0/lists/dvds/new_releases.json?apikey=kjh6zyazfeaxvmjt5kq7d64j"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
         NSDictionary *responseDictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
         self.movies = responseDictionary[@"movies"];
         //NSArray *dummymovies = [[NSArray alloc]initWithObjects:@"xyz",@"xyz",@"xyz",@"xyz",@"xyz",@"xyz",@"xyz",@"xyz",@"xyz",@"xyz",@"xyz",nil];
         //self.movies = [self.movies arrayByAddingObjectsFromArray:dummymovies];
-        [self.MovieTableView reloadData];
+        [self.dvdTableView reloadData];
         //NSLog(@"Data is %@", responseDictionary[@"movies"]);
     }];
 }
 
 
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    MovieDetailsViewController *mdvc = [[MovieDetailsViewController alloc] init];
+    
+    mdvc.movieData = self.movies[indexPath.row];
+    
+    [self.navigationController pushViewController:mdvc animated:YES];
+    
+}
 
 - (void)didReceiveMemoryWarning
 {
