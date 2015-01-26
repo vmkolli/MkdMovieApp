@@ -30,6 +30,12 @@
         
         scroll.delegate = self;*/
         self.title = @"Movies";
+        UITabBarItem *currentTab = [self.tabBarController.tabBar.items objectAtIndex:0];
+        [currentTab setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                            [UIColor colorWithRed:0 green:0 blue:1 alpha:1], UITextAttributeTextColor,
+                                                [NSValue valueWithUIOffset:UIOffsetMake(0,0)], UITextAttributeTextShadowOffset,
+                                                [UIFont fontWithName:@"Helvetica" size:18.0], UITextAttributeFont, nil]
+                                      forState:UIControlStateNormal];
         
     }
     return self;

@@ -26,12 +26,18 @@
 //    nav.viewControllers = viewControllers;
     tbc.viewControllers = [NSArray arrayWithObjects:nav1, nav2, nil];
     UITabBar *tabBars = tbc.tabBar;
+    tabBars.barTintColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.1];
     UITabBarItem *tabBarItems[2];
     NSArray *titles = @[@"Movies", @"DVDs"];
     for (int i = 0; i < tabBars.items.count ; i++ ) {
         tabBarItems[i]   = [tabBars.items objectAtIndex:i];
         tabBarItems[i].title = titles[i];
         tabBarItems[i].titlePositionAdjustment = UIOffsetMake(10, -20);
+        [tabBarItems[i] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                               [UIColor whiteColor], UITextAttributeTextColor,
+                                                               [NSValue valueWithUIOffset:UIOffsetMake(0,0)], UITextAttributeTextShadowOffset,
+                                                               [UIFont fontWithName:@"Helvetica" size:18.0], UITextAttributeFont, nil]
+                                                     forState:UIControlStateNormal];
     
     }
     //UITabBarItem *mvTabBarItem = [tabBars.items objectAtIndex:0];
