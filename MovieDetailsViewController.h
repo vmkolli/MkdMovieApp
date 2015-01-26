@@ -11,5 +11,6 @@
 @interface MovieDetailsViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *movieTitle;
 @property (weak, nonatomic) IBOutlet UILabel *movieDesc;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (nonatomic, strong) NSDictionary *movieData;
 @end

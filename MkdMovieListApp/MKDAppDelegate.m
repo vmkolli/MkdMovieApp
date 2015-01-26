@@ -19,9 +19,12 @@
     MKDMovieViewController *mvc = [[MKDMovieViewController alloc] init];
     DvdViewController *dvc = [[DvdViewController alloc] init];
     UITabBarController *tbc = [[UITabBarController alloc]init];
-    
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:mvc];
-    tbc.viewControllers = [NSArray arrayWithObjects:nav, dvc, nil];
+//    NSArray *viewControllers = [NSArray arrayWithObjects:mvc, dvc, nil];
+//    
+    UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:mvc];
+    UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:dvc];
+//    nav.viewControllers = viewControllers;
+    tbc.viewControllers = [NSArray arrayWithObjects:nav1, nav2, nil];
     UITabBar *tabBars = tbc.tabBar;
     UITabBarItem *tabBarItems[2];
     NSArray *titles = @[@"Movies", @"DVDs"];
@@ -29,6 +32,7 @@
         tabBarItems[i]   = [tabBars.items objectAtIndex:i];
         tabBarItems[i].title = titles[i];
         tabBarItems[i].titlePositionAdjustment = UIOffsetMake(10, -20);
+    
     }
     //UITabBarItem *mvTabBarItem = [tabBars.items objectAtIndex:0];
     //UITabBarItem *dvdTabBarItem = [tabBars.items objectAtIndex:1];

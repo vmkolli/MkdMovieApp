@@ -42,6 +42,11 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     MovieCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MovieCell"];
     NSDictionary *movie = [[NSDictionary alloc]initWithDictionary:self.movies[indexPath.row]];
+    UIColor *color = [[UIColor alloc] initWithRed:0.0 green:0.0 blue:0.0 alpha:1.0];
+    cell.backgroundColor = color;
+    cell.movieTitle.textColor = [UIColor whiteColor];
+    cell.movieDesc.textColor = [UIColor whiteColor];
+    
     cell.movieTitle.text = self.movies[indexPath.row][@"title"];
     cell.movieDesc.text = self.movies[indexPath.row][@"synopsis"];
     [cell.moviePoster setImageWithURL:[NSURL URLWithString:[movie valueForKeyPath:@"posters.thumbnail"]]];
