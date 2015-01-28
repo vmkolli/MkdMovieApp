@@ -15,6 +15,8 @@ Options:
 3. Customize the synopsis details overlay on Movie Poster.
 
 App:
-https://raw.githubusercontent.com/vmkolli/MkdMovieApp/master/MovieAppDemo.gif
+
+
+![alt tag](https://raw.githubusercontent.com/vmkolli/MkdMovieApp/master/MovieAppDemo.gif)
 
 
