@@ -38,13 +38,6 @@
     self.movieDesc.text = self.movieData[@"synopsis"];
     self.movieDesc.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.5];
     self.movieDesc.textColor = [UIColor whiteColor];
-
-    
-    
-    
-    
-    
-    
     self.movieDesc.frame = CGRectMake(0,0, self.movieDesc.frame.size.width, self.movieDesc.frame.size.height);
     [self.movieImage setImageWithURL:[NSURL URLWithString:[self.movieData valueForKeyPath:@"posters.original"]]];
 
