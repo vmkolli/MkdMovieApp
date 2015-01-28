@@ -14,4 +14,7 @@ Options:
 2. Customize the navigation bar
 3. Customize the synopsis details overlay on Movie Poster.
 
+App:
+https://raw.githubusercontent.com/vmkolli/MkdMovieApp/master/MovieAppDemo.gif
+
 
